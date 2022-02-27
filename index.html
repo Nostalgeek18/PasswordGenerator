@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script  src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script></script>
+    <script src="https://kit.fontawesome.com/ee169a658f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@1,800&family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
@@ -21,12 +21,19 @@
                 <p>Never use an insecure password again.</p>
             </div>
             <button class="btn password-btn"><img class="icon-1" src="./images/icon.png"> Generate passwords</button>
+            <div class="password-container">
+                <p>Password length: <span class="password-length">8</span></p>
+                <div class="arrow-container">
+                    <i class="fa-solid fa-circle-up arrow"></i>
+                    <i class="fa-solid fa-circle-down arrow"></i>
+                </div>
+            </div>
         </section>
 
         <div class="horizontal-row"></div>
 
         <section class="passwords-container">
-            <p class="copied none">Password copied.</p>
+            <p class="msgUser none">Password copied.</p>
             <div class="row-password">
                 <input class="password" type="text">
                 <input class="password" type="text">

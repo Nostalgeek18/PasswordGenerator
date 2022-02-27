@@ -31,12 +31,12 @@ body {
     color: #34D399
 }
 
-.copied {
+.msgUser {
     display:none;
     text-align: center;
     color: #10B981;
     margin: 5vh 0vh;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 
@@ -62,11 +62,15 @@ body {
     cursor: pointer;
 }
 
+.password-btn:hover {
+    background-color: #0b885e;
+}
+
 .icon-1{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin-right: 5px;
-    background-color: #10B981;
+    background-color: inherit;
 }
 
 .horizontal-row {
@@ -98,13 +102,54 @@ input.password{
     margin-bottom: 5vh;
     font-size: 1.5em;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 input:hover{
     background-color: #1b2330;
-    height: 9vh;
 }
+
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.password-container > * {
+    margin-left: 2vw;
+}
+
+.password-container p {
+    color: white;
+    font-size: 2em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-length{
+    color: #55F991;
+    font-size: 1.5em;
+    padding-left: 10px;
+    width: 50px;
+}
+
+.arrow {
+    font-size: 2em;
+    color: #55F991;
+}
+
+.arrow:hover{
+    color: #17b651;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -134,5 +179,6 @@ input:hover{
     .btn {
         margin: 5vh 0vh;
     }
+    
     
   }
